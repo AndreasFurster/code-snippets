@@ -4,9 +4,10 @@
   }
 </pre>
 
-<script src="https://api.ipify.org?format=jsonp&callback=onIpRecieved"></script>
+
 <script>
   function onIpRecieved(ip) {
     document.body.innerHTML = document.body.innerHTML.replace('YOUR_IP_ADDRESS', ip);
   }
 </script>
+<script src="https://api.ipify.org?format=jsonp&callback=onIpRecieved"></script>
