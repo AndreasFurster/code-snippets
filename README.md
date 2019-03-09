@@ -1,5 +1,5 @@
-# [Common code snippets](https://codesnippets.andreasfurster.nl)
+# [Common code snippets](http://codesnippets.andreasfurster.nl)
 - C#/.Net Core
-- [PHP](https://codesnippets.andreasfurster.nl/php.html)
+- [PHP](http://codesnippets.andreasfurster.nl/php.html)
 - Javascript
 - Git
