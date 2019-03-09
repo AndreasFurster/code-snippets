@@ -6,8 +6,8 @@
 
 
 <script>
-  function onIpRecieved(ip) {
-    document.body.innerHTML = document.body.innerHTML.replace('YOUR_IP_ADDRESS', ip);
+  function onIpRecieved(result) {
+    document.body.innerHTML = document.body.innerHTML.replace('YOUR_IP_ADDRESS', result.ip);
   }
 </script>
 <script src="https://api.ipify.org?format=jsonp&callback=onIpRecieved"></script>
