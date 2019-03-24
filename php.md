@@ -22,7 +22,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], ['YOUR_IP_ADDRESS'])){
 
 <script>
   function onIpRecieved(result) {
-    document.body.innerHTML = document.body.innerHTML.replace('YOUR_IP_ADDRESS', result.ip);
+    document.body.innerHTML = document.body.innerHTML.replace(/YOUR_IP_ADDRESS/g, result.ip);
   }
 </script>
 <script src="https://api.ipify.org?format=jsonp&callback=onIpRecieved"></script>
