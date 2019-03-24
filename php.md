@@ -8,14 +8,14 @@ error_reporting(-1);
 
 ## var_dump on current ip address
 ```php
-if(in_array($_SERVER['REMOTE_ADDR'], ['YOUR_IP_ADDRESS']){
+if(in_array($_SERVER['REMOTE_ADDR'], ['YOUR_IP_ADDRESS'])){
   var_dump($value);
 }
 ```
 
 ## exit if not on current ip address
 ```php
-if(!in_array($_SERVER['REMOTE_ADDR'], ['YOUR_IP_ADDRESS']){
+if(!in_array($_SERVER['REMOTE_ADDR'], ['YOUR_IP_ADDRESS'])){
   exit('');
 }
 ```
