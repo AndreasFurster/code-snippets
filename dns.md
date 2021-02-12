@@ -20,7 +20,7 @@
 	</p>
 </form>
 
-<code></code>
+<pre></pre>
 
 
 
@@ -31,14 +31,14 @@
 		var ipv6 = document.forms[0].elements.ipv6.value;
 
 		if(domain) {
-			document.getElementsByTagName('code')[0].innerHTML = "<br>";
+			document.getElementsByTagName('pre')[0].innerHTML = "";
 			if(ipv4){
-				document.getElementsByTagName('code')[0].innerHTML += `${domain}.     A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
-				document.getElementsByTagName('code')[0].innerHTML += `www.${domain}. A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.     A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `www.${domain}. A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
 			}
 			if(ipv6) {
-				document.getElementsByTagName('code')[0].innerHTML += `${domain}.     AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
-				document.getElementsByTagName('code')[0].innerHTML += `www.${domain}. AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.     AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `www.${domain}. AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
 			}
 		}
 	}
