@@ -31,7 +31,7 @@
 		var ipv6 = document.forms[0].elements.ipv6.value;
 
 		if(domain) {
-			document.getElementsByTagName('code')[0].innerHTML = "";
+			document.getElementsByTagName('code')[0].innerHTML = "<br>";
 			if(ipv4){
 				document.getElementsByTagName('code')[0].innerHTML += `${domain}.     A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
 				document.getElementsByTagName('code')[0].innerHTML += `www.${domain}. A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
