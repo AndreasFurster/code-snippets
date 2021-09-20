@@ -2,8 +2,8 @@
 
 ## Address bar snippets
 
-Type `j` in address bar and paste snippet after it. 
+Type `j` in address bar and paste snippet after it. Outputs are in the console (if applicable). 
 
 ### Get all edit url's on posts page
 
-    avascript:prompt('Result:', jQuery('#the-list .edit a').map((i, el) => el.href).get().join(','))
+    avascript:console.log('Result:', jQuery('#the-list .edit a').map((i, el) => el.href).get().join(','))
