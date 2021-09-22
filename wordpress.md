@@ -13,5 +13,5 @@ Type `j` in address bar and paste snippet after it. Outputs are in the console (
 ### Disallow direct file access
 
 ```php
-    if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) exit;
 ```
