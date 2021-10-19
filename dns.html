@@ -18,6 +18,11 @@
 			<input type="text" oninput="fillDNS()" name="ipv6" autocomplete="off">
 		</label>
 	</p>
+	<p>
+		<label>
+			<input type="checkbox" oninput="fillDNS()" name="www_cname" checked> Add www-CNAME
+		</label>
+	</p>
 </form>
 
 <pre></pre>
@@ -29,16 +34,19 @@
 		var domain = document.forms[0].elements.domain.value;
 		var ipv4 = document.forms[0].elements.ipv4.value;
 		var ipv6 = document.forms[0].elements.ipv6.value;
+		var www_cname = document.forms[0].elements.www_cname.value;
 
 		if(domain) {
 			document.getElementsByTagName('pre')[0].innerHTML = "";
 			if(ipv4){
 				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.     A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
-				document.getElementsByTagName('pre')[0].innerHTML += `www.${domain}. A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
 			}
 			if(ipv6) {
 				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.     AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
-				document.getElementsByTagName('pre')[0].innerHTML += `www.${domain}. AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
+			}
+			
+			if(www_cname) {
+				document.getElementsByTagName('pre')[0].innerHTML += `www.${domain}.  CNAME ${domain}.<br>`.replaceAll(' ', '&nbsp');
 			}
 		}
 	}
