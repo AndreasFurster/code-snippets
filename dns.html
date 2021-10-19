@@ -39,10 +39,10 @@
 		if(domain) {
 			document.getElementsByTagName('pre')[0].innerHTML = "";
 			if(ipv4){
-				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.      A    ${ipv4}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.      A     ${ipv4}<br>`.replaceAll(' ', '&nbsp');
 			}
 			if(ipv6) {
-				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.      AAAA ${ipv6}<br>`.replaceAll(' ', '&nbsp');
+				document.getElementsByTagName('pre')[0].innerHTML += `${domain}.      AAAA  ${ipv6}<br>`.replaceAll(' ', '&nbsp');
 			}
 			
 			if(www_cname) {
